@@ -46,4 +46,5 @@ WORKDIR /apps
 ## INSTALLATION
 ######################
 
-RUN git clone https://github.com/NightSprings/fusioncatcher_v0.99.7c.git && cd fusioncatcher_v0.99.7c && python bootstrap.py -t --download -y -i /apps/fusioncatcher/v0997c/
+RUN wget --no-check-certificate http://sf.net/projects/fusioncatcher/files/bootstrap.py -O bootstrap.py \
+&& python bootstrap.py -t --download -y -i /opt/fusioncatcher/v0997d/
