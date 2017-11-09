@@ -39,11 +39,10 @@ RUN apt-get -y clean \
     default-jdk \
     && apt-get -y clean
 
-WORKDIR /opt
+WORKDIR /apps
 
 ######################
 ## INSTALLATION
 ######################
 
-RUN wget --no-check-certificate http://sf.net/projects/fusioncatcher/files/bootstrap.py -O bootstrap.py \
-&& python bootstrap.py -t --download -y -i /opt/fusioncatcher/v0997d/
+RUN python bootstrap.py -t --download -y -i /apps/fusioncatcher/v0997c/
