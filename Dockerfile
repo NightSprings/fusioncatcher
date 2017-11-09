@@ -45,4 +45,4 @@ WORKDIR /apps
 ## INSTALLATION
 ######################
 
-RUN python bootstrap.py -t --download -y -i /apps/fusioncatcher/v0997c/
+RUN git clone https://github.com/NightSprings/fusioncatcher_v0.99.7c.git && python bootstrap.py -t --download -y -i /apps/fusioncatcher/v0997c/
