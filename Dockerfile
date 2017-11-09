@@ -37,7 +37,7 @@ RUN apt-get -y clean \
     zlib1g-dev \
     zlibc \
     default-jdk \
-    git\
+    git \
     && apt-get -y clean
 
 WORKDIR /apps
